@@ -16,7 +16,7 @@
     <meta
         description="Helping You Find a Place to Call Home. We help students and travellers acquire safe, affordable, and convenient housing by connecting them to their preferred accomodation">
 
-    <title>Búgkos</title>
+    <title>Búgkos | SDG Global Partnership Hub</title>
     <link rel=" icon" type="image/x-icon" href="assets/images/favicon.ico">
 
     <!-- Styles -->
@@ -41,23 +41,16 @@
                 <div class="row">
                     <div class="col-12">
                         <a class="navbar-brand mt-sm-0 mt-3" href="#">
-                            <img src="assets/images/bugkos_logo.png" alt="Roompal" height="75" id="logoImage">
-                            <img src="assets/images/bugkos_word.png" alt="Roompal" height="75" id="wordmarkImage"
-                                class="hide pb-2">
+                            <img src="assets/images/bugkos_logo.png" alt="Bugkos" height="75" id="logoImage">
+                            <img src="assets/images/bugkos_word.png" height="75" id="wordmarkImage" class="hide pb-2">
                         </a>
                     </div>
-                    <!-- <div class="col-6">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div> -->
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item pe-4">
+                                <li class="nav-item ps-5 pe-4">
                                     <a class="nav-link active" href="#Hero">Home</a>
                                 </li>
                                 <li class="nav-item pe-4">
@@ -66,12 +59,6 @@
                                 <li class="nav-item pe-4">
                                     <a class="nav-link" href="#Services">Services</a>
                                 </li>
-                                <li class="nav-item pe-4">
-                                    <a class="nav-link" href="#Reviews">Reviews</a>
-                                </li>
-                                <li class="nav-item pe-4">
-                                    <a class="nav-link" href="#Contact">Contact</a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -79,19 +66,35 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-inline" id="navbarInline">
-                            <ul class="navbar-nav ms-auto">
-                                <a href="#">
-                                    <button class="btn cannot-click btn-primary btn-lg me-2" id="NavViewButton"
-                                        style="font-size: small;">View Partners
-                                    </button>
-                                </a>
-                                <a href="#">
-                                    <button class="btn cannot-click btn-outline-primary btn-lg" id="NavListingButton"
-                                        style="font-size: small;">List your Organization
-                                    </button>
-                                </a>
+                            <ul class="navbar-nav ms-auto collapse navbar-collapse">
+                                <button class="btn btn-primary btn-lg me-2" id="NavViewButton"
+                                    style="font-size: small;">View Partnership Hub
+                                </button>
+                                <button class="btn btn-outline-primary btn-lg" id="NavListingButton"
+                                    style="font-size: small;" data-bs-toggle="modal"
+                                    data-bs-target="#partnerModal">Become a Partner
+                                </button>
                             </ul>
                         </div>
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon" style="background-image: none;"><i
+                                        class="material-icons" style="color: #795548;">menu</i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div>
+                        <h5 class="text-white h4">Collapsed content</h5>
+                        <button class="btn btn-primary btn-lg me-2" style="font-size: small;">View Partnership Hub
+                        </button>
+                        <button class="btn btn-outline-primary btn-lg" style="font-size: small;" data-bs-toggle="modal"
+                            data-bs-target="#partnerModal">Become a Partner
+                        </button>
                     </div>
                 </div>
             </div>
@@ -116,30 +119,25 @@
   ██   ██  ██████  ██      ██ ███████      
                                     
   ------------------------------------>
-
     <div class="container mt-5" id="Hero">
-        <div class="row d-flex align-items-center" style="margin-top: 150px;">
-            <div class="col-md-6 order-pd-5 order-1">
-                <div class="row display-1">
+        <div class="text-center" style="height: 12vh;"></div>
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6 order-md-1">
+                <div class="row display-1 justify-content-sm-start justify-content-center">
                     <img src="assets/images/bugkos_word.png" style="width: 360px;">
                 </div>
                 <div class="row">
-                    <p id="HeroSubHeading" class="pt-4">SDG GLOBAL PARTNERSHIP HUB</p>
+                    <p id="HeroSubHeading" class="pt-4 pb-sm-0 pb-5 text-center text-md-start">SDG GLOBAL PARTNERSHIP
+                        HUB</p>
                 </div>
-
             </div>
-            <div class="col-md-6 order-pt-5 order-2">
+            <div class="col-md-6 order-md-2 order-1">
                 <div class="globe">
                     <div></div>
                 </div>
-
             </div>
-            <div class="col-md-6 order-pt-5 order-2">
-
-
-            </div>
+            <div class="col-md-6 order-md-3 order-3"></div>
         </div>
-
         <div class="text-center" style="height: 30vh;"></div>
     </div>
 
@@ -155,57 +153,799 @@
                                                           
   --------------------------------------------------------------->
 
-    <div class="pt-5" id="About" style="background-color: #2196F3;">
+    <div class="pt-5" id="About" style="background-color: #D2B48C;">
+        <div class="text-center" style="height: 10vh;"></div>
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-4">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-6 col-sm-12 order-1 order-sm-2 p-5 p-sm-0">
                     <div class="row">
-                        <img src="assets/images/item1.png" alt="3D Bed" class="img-fluid">
+                        <p class="Heading1">About Us</p>
                     </div>
-                </div>
-                <div class="col-1"></div>
-                <div class="col">
-                    <div class="row">
-                        <p class="mb-5 Heading1">About Us</p>
-                    </div>
-                    <div class="row">
-                        <p id="AboutSubHeading" class="text-white text-justify" style="line-height: 2;">
-                            Roompal, a proptech startup, is an innovative online booking platform specifically designed
-                            for
-                            the room
-                            rental industry. It shall be implemented and operate in close coordination with local
-                            government
-                            units
-                            (LGUs), higher education institutions (HEIs), room providers, and students. The primary goal
-                            of
-                            Roompal is
-                            to streamline property management and marketing for room providers while providing direct
-                            market
-                            access to
-                            renters.
+                    <div class="row mt-2 p-3 rounded" style="background-color: rgba(255, 255, 255, 0.2);">
+                        <p class="text-black text-justify" style="line-height: 2;">
+                            Búgkos serves as a non-profit global partnership hub dedicated to advancing the Sustainable
+                            Development Goals (SDGs). In its essence, "Búgkos" draws its name from the Filipino Bicol
+                            and Cebu dialect, where it signifies "bundle."
                         </p>
                     </div>
-                    <div class="row mt-4">
+                    <div class="row mt-2 p-3 mt-4 rounded" style="background-color: rgba(255, 255, 255, 0.2);">
+                        <p class="text-black text-justify" style="line-height: 2;">
+                            Just as a bundle brings together various components into a cohesive whole, Búgkos endeavors
+                            to unite diverse stakeholders from around the world, forming a collective force committed to
+                            realizing the objectives outlined in the SDGs.
+                        </p>
+                    </div>
+                    <div class="row p-3 mt-4 rounded" style="background-color: rgba(255, 255, 255, 0.2);">
+                        <p class="text-black text-justify" style="line-height: 2;">
+                            Through this partnership hub, resources, expertise, and initiatives are consolidated and
+                            mobilized, amplifying their impact and accelerating progress towards achieving the SDGs on a
+                            global scale.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="row d-flex align-items-center mt-5">
-                <div class="col">
-                    <div class="row">
-                        <h4 class="text-justify text-white pr-5" style="line-height: 2;" id="servicesText">We help YOU
-                            acquire safe,
-                            affordable, convenient
-                            housing by connecting YOU to your preferred
-                            accommodation.</h4>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12 order-2 order-sm-1 pe-5 pt-5 pt-sm-0 ">
+                    <div class="row justify-content-center">
+                        <img src="assets/images/bugkos_logo_white.png" alt="Bundle" class="img-fluid">
                     </div>
-                </div>
-                <div class="col circle2sect" id="circle2Section">
-                    <img src="assets/images/room9.png" alt="3D Room" class="img-fluid" id="room2Image">
-                    <!-- <div class="circle2" id="circle2"></div> -->
                 </div>
             </div>
         </div>
+
+
+        <div class="text-center" style="height: 10vh;"></div>
+    </div>
+
+
+    <!----------------------------------------------------------
+
+  ███████ ███████ ██████  ██    ██ ██  ██████ ███████ ███████ 
+  ██      ██      ██   ██ ██    ██ ██ ██      ██      ██      
+  ███████ █████   ██████  ██    ██ ██ ██      █████   ███████ 
+       ██ ██      ██   ██  ██  ██  ██ ██      ██           ██ 
+  ███████ ███████ ██   ██   ████   ██  ██████ ███████ ███████       
+                                                          
+  ---------------------------------------------------------->
+
+    <div class="bg-white" id="Services">
         <div class="text-center" style="height: 15vh;"></div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="col-md-8">
+                    <h2 class="Heading2 mb-4">What We Do</h2>
+                    <p id="ServicesSubHeading" class="text-black" style="line-height: 2;">
+                        We are dedicated to fostering partnerships and collaborations among diverse stakeholders
+                        to accelerate progress towards achieving the Sustainable Development Goals (SDGs).
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center text-center mt-4">
+                <!-- Box 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="bg-white p-4">
+                        <i class="material-icons-round" style="font-size: 8rem; color: #D2B48C;">search</i>
+                        <p class="ServicesBoxText mt-3" style="
+            transform: translateY(60%);">SEARCH FOR PARTNERS</p>
+                        <p class="text-black-70 small mb-0 pb-4 ServicesBoxDescription">Organizations and individuals
+                            can search for potential partners based on their expertise, geographical location, and areas
+                            of interest related to the SDGs.</p>
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="bg-white p-4">
+                        <i class="material-icons-round" style="font-size: 8rem; color: #D2B48C;">storage</i>
+                        <p class="ServicesBoxText mt-3" style="
+            transform: translateY(60%);">PROJECT DATABASE</p>
+                        <p class="text-black-70 small mb-0 pb-4 ServicesBoxDescription">A database of ongoing and
+                            completed projects related to sustainable development, allowing users to learn from past
+                            initiatives and identify opportunities for collaboration.</p>
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="bg-white p-4">
+                        <i class="material-icons-round" style="font-size: 8rem; color: #D2B48C;">event</i>
+                        <p class="ServicesBoxText mt-3" style="
+            transform: translateY(60%);">EVENTS CALENDAR</p>
+                        <p class="text-black-70 small mb-0 pb-4 ServicesBoxDescription">Information on upcoming
+                            conferences, workshops, webinars, and other events relevant to sustainable development and
+                            partnership building.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Spacer -->
+        <div class="text-center" style="height: 10vh;"></div>
+
+        <!-- What are the SDGs -->
+        <div class="p-3 p-sm-0">
+            <div class="container pt-5 pb-4 bg-primary shadow-sm" style="border-radius: 18px;">
+                <div class="row">
+                    <div class="col-6 ps-4 d-flex flex-column justify-content-end">
+                        <div class="row">
+                            <h2 class="text-white" id="L1">What are the</h2>
+                        </div>
+                        <div class="row">
+                            <h1 class="text-white" id="L2">Sustainable Development Goals?</h1>
+                        </div>
+                    </div>
+                    <div class="col-6 pe-4 ">
+                        <div class="row">
+                            <p class="text-white small" style="line-height: 2; text-align: justify;">The Sustainable
+                                Development Goals (SDGs), also known as the Global Goals, were adopted by the United
+                                Nations
+                                in 2015 as a universal call to action to end poverty, protect the planet, and ensure
+                                that by
+                                2030 all people enjoy peace and prosperity.</p>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-primary" style="font-size: small;" data-bs-toggle="modal"
+                                data-bs-target="#SDGModal">Read more about the 17 Sustainable
+                                Development Goals
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade modal-lg" id="SDGModal" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class=" modal-title fs-5 text-white">Sustainable Development Goals</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion" id="accordionSDG">
+
+
+                            <p class="pt-3 pb-3 lh-lg">The Sustainable Development Goals (SDGs), also known as the
+                                Global
+                                Goals, were adopted by the United Nations in 2015 as a universal call to action to end
+                                poverty, protect the planet, and ensure that by 2030 all people enjoy peace and
+                                prosperity.
+                            </p>
+
+                            <!-- SDG 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Sustainable Development Goal #1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>End poverty in all its forms everywhere<br><br></strong>
+                                        There is a concerning trend in global poverty, exacerbated by the COVID-19
+                                        pandemic, which has halted decades of progress in poverty reduction. It predicts
+                                        that by 2030, approximately 575 million people will still be living in extreme
+                                        poverty, particularly challenging in sub-Saharan Africa and conflict-affected
+                                        regions. Despite some expansion in social protection during the pandemic, over 4
+                                        billion people globally remain without adequate coverage. Historical trends
+                                        suggest only one-third of countries will halve their national poverty rates by
+                                        2030, and social protection coverage remains insufficient for various vulnerable
+                                        groups. To effectively combat poverty, there's a call for increased action and
+                                        investment in job creation and social services, emphasizing the need to redirect
+                                        public resources toward essential services.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Sustainable Development Goal #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>End hunger, achieve food security and improved
+                                            nutrition and promote sustainable agriculture<br><br></strong>
+                                        There is an escalating issue of hunger and food insecurity worldwide, with the
+                                        number of affected individuals rising steadily since 2015, exacerbated by
+                                        factors such as the COVID-19 pandemic, conflict, climate change, and inequality.
+                                        Despite global efforts, projections suggest that by 2030, approximately 670
+                                        million people will still face hunger, equal to the number in 2015. Challenges
+                                        persist in reducing malnutrition among children, necessitating a 2.2-fold
+                                        increase in the current rate of reduction in stunting to meet global targets.
+                                        Urgent action is required to transform food systems, enhance food security, and
+                                        invest in sustainable agricultural practices to achieve zero hunger by 2030.
+                                        Additionally, various targets address issues such as the increase in food
+                                        insecurity due to the pandemic, the stagnation in reducing overweight children,
+                                        declining investments in agriculture, the elimination of agricultural export
+                                        subsidies, and the ongoing challenge of fluctuating food prices, especially in
+                                        sub-Saharan Africa and least developed countries.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Sustainable Development Goal #3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Ensure healthy lives and promote well-being for
+                                            all at all ages<br><br></strong>
+                                        It is noted that the challenges facing the achievement of Sustainable
+                                        Development Goal 3 (SDG3), exacerbated by the pandemic and ongoing crises, lead
+                                        to a rise in health inequalities and threatening universal health coverage.
+                                        Notably, there's an alarming increase in the number of un- or under-vaccinated
+                                        children, especially in low- and middle-income countries, alongside a slow
+                                        decline in maternal mortality rates and under-5 mortality rates, with urgent
+                                        efforts required to meet the 2030 targets. Progress towards ending communicable
+                                        diseases remains off track, with setbacks observed in reducing HIV infections,
+                                        TB, and malaria cases. Additionally, there's a need to bolster health systems
+                                        and address the shortage of health workers, especially in regions with high
+                                        disease burdens. Efforts to enhance family planning services and childhood
+                                        vaccinations also require immediate attention to ensure universal access to
+                                        healthcare services.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Sustainable Development Goal #4
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Ensure inclusive and equitable quality
+                                            education and promote lifelong learning opportunities for
+                                            all<br><br></strong>
+                                        The existing challenges in achieving education targets, is worsened by the
+                                        COVID-19 pandemic, which has further disrupted progress. Without additional
+                                        measures, only a small fraction of countries will meet Sustainable Development
+                                        Goal 4 (SDG4) by 2030, leaving millions of children without access to quality
+                                        education and lacking essential numeracy and literacy skills. Despite some
+                                        improvements in school completion rates, progress has slowed, and learning
+                                        levels have stagnated, with documented losses due to pandemic-related school
+                                        closures. Access to pre-primary education remains limited, and participation in
+                                        education and training for youth and adults is insufficient. Basic school
+                                        infrastructure and teacher qualifications are also highlighted as areas needing
+                                        attention. Reimagining education systems and prioritizing education financing
+                                        are crucial for achieving SDG4 effectively.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Sustainable Development Goal #5
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Achieve gender equality and empower all women
+                                            and girls<br><br></strong>
+                                        The illustrated stark reality that the world is far from achieving gender
+                                        equality by 2030, with none of the 18 indicators being on track to meet targets.
+                                        Progress in closing gender gaps in various areas, such as legal protection,
+                                        representation in leadership roles, and ending child marriage, remains slow,
+                                        with estimations suggesting it could take centuries to achieve parity. The
+                                        COVID-19 pandemic has exacerbated existing gender inequalities, particularly in
+                                        healthcare, education, and economic opportunities. Comprehensive policy reforms
+                                        and strong political leadership are deemed essential to dismantle systemic
+                                        barriers to achieving Sustainable Development Goal 5 (SDG5) and advancing gender
+                                        equality globally.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 6 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Sustainable Development Goal #6
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Ensure availability and sustainable management
+                                            of water and sanitation for all<br><br></strong>
+                                        Despite some progress, billions of people still lack access to safe water,
+                                        sanitation, and hygiene, with water scarcity worsening due to conflicts and
+                                        climate change. Achieving universal coverage by 2030 requires substantial
+                                        increases in current rates of progress, particularly for drinking water,
+                                        sanitation, and hygiene. Challenges include water pollution, wastewater
+                                        treatment, and water use efficiency, compounded by inadequate frameworks for
+                                        sustainable water management and decreasing ODA disbursements to the water
+                                        sector. Addressing these issues necessitates boosting infrastructure investment,
+                                        enhancing cross-sectoral coordination, and prioritizing climate change
+                                        adaptation efforts to achieve Sustainable Development Goal 6 (SDG6).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 7 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Sustainable Development Goal #7
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Ensure access to affordable, reliable,
+                                            sustainable and modern energy for all<br><br></strong>
+                                        Despite improvements in access to electricity and clean cooking fuels globally,
+                                        significant challenges persist, with 675 million people still lacking
+                                        electricity access and 2.3 billion relying on unsafe cooking fuels. The war in
+                                        Ukraine and economic uncertainty contribute to energy price volatility,
+                                        prompting mixed responses with some countries investing more in renewables while
+                                        others increase reliance on coal, jeopardizing the green transition. If current
+                                        trends persist, millions will remain without electricity access and clean
+                                        cooking fuels by 2030. Accelerating electrification, ramping up investments in
+                                        renewables, and enhancing electricity grid infrastructure are essential to
+                                        achieve universal energy access and mitigate climate impacts. However,
+                                        decreasing international financial support for clean energy in developing
+                                        countries poses a significant challenge, highlighting the need for concerted
+                                        global efforts to ensure equitable energy access and sustainable development.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 8 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        Sustainable Development Goal #8
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Promote sustained, inclusive and sustainable
+                                            economic growth, full and productive employment and decent work for
+                                            all<br><br></strong>
+                                        Progress toward achieving SDG8 faces significant challenges exacerbated by
+                                        various crises including the aftermath of COVID-19, trade tensions, and the
+                                        conflict in Ukraine. These factors are predicted to slow down global economic
+                                        growth, jeopardizing advancements in equitable pay and decent work. While global
+                                        real GDP per capita increased in 2021, forecasts indicate a slowdown in growth,
+                                        particularly impacting LDCs. Informal employment remains a prevalent issue with
+                                        around 2 billion workers lacking social protection, and productivity growth has
+                                        been declining globally. The global unemployment rate has slightly decreased but
+                                        remains a concern, especially among young people, with nearly one in four not in
+                                        education, employment, or training. Additionally, child labor has increased, and
+                                        while tourism's economic contribution is recovering, challenges persist in
+                                        achieving sustainable development goals related to finance access and digital
+                                        solutions. Addressing these issues will require comprehensive reforms in the
+                                        financial system to tackle rising debts and promote equitable pay and decent
+                                        work for all.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 9 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine" aria-expanded="false"
+                                        aria-controls="collapseNine">
+                                        Sustainable Development Goal #9
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Build resilient infrastructure, promote
+                                            inclusive and sustainable industrialization and foster
+                                            innovation<br><br></strong>
+                                        The recovery of the manufacturing industry from COVID-19 is varied, with
+                                        high-income regions reaching record levels of manufacturing value added (MVA)
+                                        per capita in 2022, while levels in least developed countries (LDCs) remained
+                                        close to the 2015 baseline. Higher-technology industries recovered faster,
+                                        indicating the importance of promoting innovation and technology transfer. To
+                                        achieve Goal 9 by 2030, it is crucial to support LDCs, invest in advanced
+                                        technologies, reduce carbon emissions, and enhance global mobile broadband
+                                        access. Despite global manufacturing employment returning to pre-pandemic levels
+                                        in 2021, the share of manufacturing employment in total employment continued to
+                                        decline. Additionally, while global CO2 emissions reached a new all-time high in
+                                        2022, access to mobile broadband, particularly in Sub-Saharan Africa and LDCs,
+                                        remains a challenge.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 10 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        Sustainable Development Goal #10
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Reduce inequality within and among countries<br><br></strong>
+                                        Before the COVID-19 pandemic, the incomes of the bottom 40% of the population
+                                        were increasing faster than the national average in many countries, contributing
+                                        to a reduction in income inequality. However, the pandemic and subsequent uneven
+                                        recoveries across regions threaten to reverse this trend and exacerbate global
+                                        inequality. Record numbers of people are fleeing conflicts and economic
+                                        hardship, with one in 251 people worldwide being a refugee by mid-2022, the
+                                        highest proportion ever documented. Achieving SDG 10 requires addressing the
+                                        root causes of wage disparities and access to resources within and between
+                                        countries. Despite some progress, challenges remain, such as the persistence of
+                                        a high share of people living below half the median income in many countries and
+                                        a decline in the share of economic output earned by workers over the past
+                                        decade. Additionally, the global average cost of sending remittances remains
+                                        high, exceeding the SDG target.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 11 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEleven" aria-expanded="false"
+                                        aria-controls="collapseEleven">
+                                        Sustainable Development Goal #11
+                                    </button>
+                                </h2>
+                                <div id="collapseEleven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Make cities and human settlements inclusive,
+                                            safe, resilient and sustainable<br><br></strong>
+                                        The COVID-19 pandemic has led to significant shifts in migration patterns,
+                                        impacting urban areas disproportionately and hindering progress towards
+                                        sustainable cities. The number of people living in slums or slum-like conditions
+                                        in urban areas has been steadily growing, exacerbating the housing crisis,
+                                        particularly in developing countries. Access to public transportation remains
+                                        inadequate for over half of the world's urban population, and the physical
+                                        expansion of cities outpaces population growth, highlighting challenges in urban
+                                        planning. Waste management also remains a concern, with a significant portion of
+                                        municipal solid waste left uncollected, contributing to pollution and health
+                                        risks. To achieve SDG 11, efforts must focus on strengthening urban planning
+                                        capacities, improving public transportation access, enhancing waste management
+                                        systems, and increasing the proportion of open public spaces in cities.
+                                        Additionally, increasing the number of countries with local governments equipped
+                                        with disaster risk reduction strategies is crucial for building resilience in
+                                        urban areas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 12 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwelve" aria-expanded="false"
+                                        aria-controls="collapseTwelve">
+                                        Sustainable Development Goal #12
+                                    </button>
+                                </h2>
+                                <div id="collapseTwelve" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Ensure sustainable consumption and production
+                                            patterns<br><br></strong>
+                                        The world is falling short of its target to reduce per-capita food waste and
+                                        losses by 2030, exacerbated by the disruptions caused by the COVID-19 pandemic,
+                                        which have altered consumption and production patterns. There is an urgent need
+                                        for responsible consumption and production practices to be integrated into the
+                                        pandemic recovery efforts, alongside accelerating the decoupling of economic
+                                        growth from resource use. While reporting on corporate sustainability has
+                                        increased significantly since the start of the SDG period, there is room for
+                                        improvement, particularly in reporting activities contributing to the SDGs. Key
+                                        policies supporting the transition to sustainable practices have been
+                                        implemented, but there are regional disparities in reporting and progress.
+                                        Despite efforts, post-harvest food losses remain stagnant, far from the goal of
+                                        halving them by 2030. Additionally, fossil fuel subsidies have risen, posing a
+                                        challenge to sustainability efforts. To achieve SDG12, robust policies promoting
+                                        sustainable practices and reducing resource use are essential.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 13 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThirteen" aria-expanded="false"
+                                        aria-controls="collapseThirteen">
+                                        Sustainable Development Goal #13
+                                    </button>
+                                </h2>
+                                <div id="collapseThirteen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Take urgent action to combat climate change
+                                            and its impacts<br><br></strong>
+                                        The world faces an imminent climate crisis, with current actions insufficient to
+                                        prevent catastrophic impacts. Urgent and transformative measures are needed
+                                        within this decade to significantly reduce greenhouse gas emissions across all
+                                        sectors to meet the 1.5°C target. Failure to act risks the lives of billions of
+                                        people, leading to worsening heatwaves, droughts, floods, wildfires, sea-level
+                                        rise, and famines. Emissions must be nearly halved by 2030 to combat climate
+                                        change effectively. Despite some progress in disaster risk reduction strategies
+                                        and climate finance, global temperatures have already exceeded 1.1°C, and
+                                        emissions continue to rise, surpassing pre-industrial levels. Furthermore,
+                                        climate change education remains inadequate, with a significant portion of
+                                        national curriculum frameworks lacking mention of climate change, highlighting
+                                        the urgent need for comprehensive climate action and education.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 14 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFourteen" aria-expanded="false"
+                                        aria-controls="collapseFourteen">
+                                        Sustainable Development Goal #14
+                                    </button>
+                                </h2>
+                                <div id="collapseFourteen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Conserve and sustainably use the oceans, seas
+                                            and marine resources for sustainable development<br><br></strong>
+                                        The health of the ocean, the world's largest ecosystem, is in danger due to
+                                        rising acidification, eutrophication, declining fish stocks, and plastic
+                                        pollution. Despite some progress in expanding marine protected areas and
+                                        combating illegal fishing, more concerted efforts and acceleration are needed to
+                                        advance towards SDG14. Urgent and coordinated global action is required to
+                                        protect the ocean, which continues to be endangered by destructive trends. The
+                                        UN Ocean Conference 2025 and other events are planned to address these issues,
+                                        including the Civil Society and Other Stakeholders Forum-SIDS4 4th International
+                                        Conference on Small Island Developing States and the Second Preparatory
+                                        Committee Meeting for the SIDS4 Conference. Additionally, more robust monitoring
+                                        and evaluation mechanisms are needed to assess progress accurately and identify
+                                        areas requiring intervention.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 15 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFifteen" aria-expanded="false"
+                                        aria-controls="collapseFifteen">
+                                        Sustainable Development Goal #15
+                                    </button>
+                                </h2>
+                                <div id="collapseFifteen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Protect, restore and promote sustainable use
+                                            of terrestrial ecosystems, sustainably manage forests, combat
+                                            desertification, and halt and reverse land degradation and halt biodiversity
+                                            loss<br><br></strong>
+                                        Terrestrial ecosystems are under immense pressure from human activities, leading
+                                        to biodiversity loss, deforestation, desertification, and land degradation.
+                                        Despite efforts to expand protected areas and combat illegal wildlife trade,
+                                        global biodiversity is declining at an alarming rate. Urgent and transformative
+                                        action is needed to reverse these trends and achieve SDG 15 targets. However,
+                                        current progress remains insufficient, with biodiversity loss continuing
+                                        unabated, and over 25% of species assessed are at risk of extinction.
+                                        Additionally, deforestation rates have increased in some regions, and
+                                        desertification and land degradation are ongoing challenges. Concerted efforts
+                                        are needed to restore degraded ecosystems, protect endangered species, and
+                                        promote sustainable land use practices to safeguard terrestrial biodiversity and
+                                        achieve SDG 15.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 16 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSixteen" aria-expanded="false"
+                                        aria-controls="collapseSixteen">
+                                        Sustainable Development Goal #16
+                                    </button>
+                                </h2>
+                                <div id="collapseSixteen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Promote peaceful and inclusive societies for
+                                            sustainable development, provide access to justice for all and build
+                                            effective, accountable and inclusive institutions at all
+                                            levels<br><br></strong>
+                                        Despite progress in some areas, significant challenges remain in achieving
+                                        peaceful, just, and inclusive societies worldwide. Conflict, violence, and
+                                        insecurity continue to threaten progress, with over 22 million people displaced
+                                        due to conflict or persecution by mid-2022. Additionally, progress towards
+                                        reducing homicide rates and ensuring access to justice remains slow,
+                                        particularly in conflict-affected regions. Strengthening the rule of law,
+                                        promoting accountable institutions, and fostering inclusive governance are
+                                        essential for achieving SDG 16 targets. However, civic space continues to shrink
+                                        globally, with increasing restrictions on freedom of expression, association,
+                                        and peaceful assembly. Upholding human rights, promoting gender equality, and
+                                        combating corruption are critical for building peaceful and inclusive societies
+                                        and advancing sustainable development.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 17 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeventeen" aria-expanded="false"
+                                        aria-controls="collapseSeventeen">
+                                        Sustainable Development Goal #17
+                                    </button>
+                                </h2>
+                                <div id="collapseSeventeen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionSDG">
+                                    <div class="accordion-body">
+                                        <strong>Strengthen the means of implementation and
+                                            revitalize the Global Partnership for Sustainable
+                                            Development<br><br></strong>
+                                        Achieving the Sustainable Development Goals (SDGs) requires effective
+                                        implementation strategies, robust partnerships, and sufficient financing.
+                                        Despite some progress, global efforts to mobilize resources for sustainable
+                                        development have been inadequate, with developing countries facing significant
+                                        challenges in accessing finance and technology transfer. Strengthening the means
+                                        of implementation and revitalizing the global partnership for sustainable
+                                        development are crucial for accelerating progress towards the SDGs. However, ODA
+                                        disbursements have declined in recent years, and the global response to the
+                                        COVID-19 pandemic has further strained limited resources. Enhancing
+                                        international cooperation, promoting innovative financing mechanisms, and
+                                        fostering inclusive partnerships are essential for achieving the SDGs by 2030.
+                                        Additionally, addressing systemic barriers, such as debt sustainability and
+                                        trade restrictions, is necessary to ensure equitable and sustainable development
+                                        for all.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spacer -->
+        <div class="text-center" style="height: 15vh;"></div>
+
+
+    </div>
+
+    <div class="text-center" style="height: 20vh;"></div>
+
+    <section class="semi-circle" style="margin-top: -20vh;">
+        <div style="height: 10vh;"></div>
+
+        <div class="text-center bg-white" style="height: 30vh;">
+            <div class="ServicesBox col d-flex flex-column align-items-center text-justify">
+
+                <p class="text-black medium mb-5 text-center col-11 col-md-6" style="position: relative; z-index: 1;">
+                    <img src="assets/images/bugkos_logo.png" alt="Roompal" height="75"><br><br>
+                    &copy; Búgkos 2024<br><br><span class="text-black-50">Created for UPLB COSS 40th CS Week Web Design
+                        Competition<br>By: John Patrick Prieto</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="partnerModal" tabindex="-1" aria-labelledby="partnerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="partnerModalLabel">Become a Partner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="partnerOrganization" class="form-label">Organization Name</label>
+                            <input type="text" class="form-control" id="partnerOrganization" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="partnerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="partnerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="partnerWebsite" class="form-label">Website</label>
+                            <input type="url" class="form-control" id="partnerWebsite">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">SDG(s) Covered</label>
+                            <div>
+                                <input type="hidden" id="selectedSDGs" name="selectedSDGs" value="">
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(1)"
+                                    id="sdg1">SDG 1:
+                                    No Poverty</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(2)"
+                                    id="sdg2">SDG 2:
+                                    Zero Hunger</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(3)"
+                                    id="sdg3">SDG 3:
+                                    Good Health and Well-being</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(4)"
+                                    id="sdg4">SDG 4:
+                                    Quality Education</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(5)"
+                                    id="sdg5">SDG 5:
+                                    Gender Equality</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(6)"
+                                    id="sdg6">SDG 6:
+                                    Clean Water and Sanitation</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(7)"
+                                    id="sdg7">SDG 7:
+                                    Affordable and Clean Energy</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(8)"
+                                    id="sdg8">SDG 8:
+                                    Decent Work and Economic Growth</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(9)"
+                                    id="sdg9">SDG 9:
+                                    Industry, Innovation, and Infrastructure</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(10)"
+                                    id="sdg10">SDG 10: Reduced Inequality</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(11)"
+                                    id="sdg11">SDG 11: Sustainable Cities and Communities</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(12)"
+                                    id="sdg12">SDG 12: Responsible Consumption and Production</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(13)"
+                                    id="sdg13">SDG 13: Climate Action</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(14)"
+                                    id="sdg14">SDG 14: Life Below Water</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(15)"
+                                    id="sdg15">SDG 15: Life on Land</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(16)"
+                                    id="sdg16">SDG 16: Peace, Justice, and Strong Institutions</label><br>
+                                <label class="btn btn-outline-primary mb-2" onclick="toggleSDGSelection(17)"
+                                    id="sdg17">SDG 17: Partnerships for the Goals</label><br>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="focalPerson" class="form-label">Focal Person</label>
+                            <input type="text" class="form-control" id="focalPerson" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="partnerMessage" class="form-label">Optional Message</label>
+                            <textarea class="form-control" id="partnerMessage" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
@@ -216,7 +956,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll_top.js"></script>
+    <script src="assets/js/smooth_scroll.js"></script>
+    <script src="assets/js/sdg.js"></script>
+    <script src="assets/js/refresh.js"></script>
 
 </body>
 
