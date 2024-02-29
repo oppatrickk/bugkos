@@ -1,0 +1,34 @@
+==========================================================
+
+John Patrick Prieto
+patREKT
+
+Created for UPLB COSS 40th CS Week Web Design Competition 
+
+==========================================================
+
+1. Original Assets
+(Created by me using Photoshop)
+- Images
+    - bugkos_logo_white.png
+    - bugkos_logo.png
+    - bugkos_word.png
+    - favicon.ico
+
+NOTE: The font used in the logo is Quiapo free
+    Font Creator: Aaron Amar
+    Retrieved from: https://www.behance.net/gallery/64253003/Quiapo-Free-Brush-Typeface
+    License: Free for Personal and Commercial Use
+
+2. External Assets
+- Images
+    - globe.jpg
+
+    Image Creator: jimht at shaw dot ca
+    Retrieved from: https://en.m.wikipedia.org/wiki/File:Earthmap1000x500.jpg
+    License: Wikimedia Commons (Commons is a freely licensed media file repository)
+
+
+3. References:
+- https://sdgs.un.org/
+- https://www.undp.org/sustainable-development-goals

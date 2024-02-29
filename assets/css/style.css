@@ -1,16 +1,26 @@
+/*     
+    
+    John Patrick Prieto
+    patREKT
+
+    Created for UPLB COSS 40th CS Week Web Design Competition 
+    
+*/
+
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova');
 
-
+/* Body */
 body {
     font-family: 'Poppins', sans-serif;
     color: black;
-
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
+/* Scrollbar */
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -28,6 +38,93 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
+.bg-primary {
+    background-color: #795548 !important;
+}
+
+
+/* Navbar */
+.navbar-nav .nav-link {
+    font-family: 'Proxima Nova', sans-serif;
+    color: black !important;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #D2B48C !important;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #D2B48C !important;
+    font-weight: 700;
+}
+
+.navbar.navbar-scroll {
+    transition: box-shadow 0.3s;
+    box-shadow: none;
+}
+
+.navbar.navbar-scroll.navbar-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar.navbar-scroll {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: none;
+}
+
+.navbar.navbar-scroll.navbar-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* * Shrink logo * */
+.logo-shrink {
+    height: 40px;
+    transition: ease-in-out 0.5s;
+}
+
+.logo-grow {
+    height: 75px;
+    transition: ease-in-out 0.5s;
+}
+
+.show {
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.hide {
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.cannot-click {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+/* Home */
 .globe {
     width: 400px;
     height: 400px;
@@ -63,33 +160,15 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-
-.navbar-nav .nav-link {
+#HeroSubHeading {
     font-family: 'Proxima Nova', sans-serif;
-    color: black !important;
-    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #D2B48C;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #D2B48C !important;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-}
-
-.navbar-nav .nav-link.active {
-    color: #D2B48C !important;
-    font-weight: 700;
-}
-
-.navbar.navbar-scroll {
-    transition: box-shadow 0.3s;
-    box-shadow: none;
-}
-
-.navbar.navbar-scroll.navbar-shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
+/* Buttons */
 .btn-primary {
     background-color: #795548 !important;
     box-shadow: none !important;
@@ -111,25 +190,6 @@ body::-webkit-scrollbar-thumb:hover {
 .btn-outline-primary:hover {
     color: black !important;
     background-color: #D2B48C !important;
-}
-
-.bg-primary {
-    background-color: #795548 !important;
-}
-
-.text-primary {
-    color: #795548 !important;
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #FFFFFFFF;
-    transition: background-color 1s ease-out;
-    z-index: -1;
 }
 
 /* * Scroll to Top Button * */
@@ -186,75 +246,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-
-.navbar.navbar-scroll {
-    transition: box-shadow 0.3s ease-in-out;
-    box-shadow: none;
-}
-
-.navbar.navbar-scroll.navbar-shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link {
-    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
-}
-
-a.disabled {
-    pointer-events: none;
-    cursor: default;
-}
-
-
-#HeroHeading1,
-#HeroHeading2 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #795548;
-    transition: color 0.3s ease-in-out;
-}
-
-#HeroHeading2:hover {
-    color: #D2B48C;
-}
-
-#HeroSubHeading {
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.2;
-    color: #D2B48C;
-}
-
-/* Shrink logo */
-.logo-shrink {
-    height: 40px;
-    transition: ease-in-out 0.5s;
-}
-
-.logo-grow {
-    height: 75px;
-    transition: ease-in-out 0.5s;
-}
-
-.show {
-    opacity: 1;
-    transition: ease-in-out 0.5s;
-}
-
-.hide {
-    opacity: 0;
-    transition: ease-in-out 0.5s;
-}
-
-.cannot-click {
-    pointer-events: none;
-    cursor: default;
-}
-
-
+/* Headings */
 .Heading1 {
     font-family: 'Proxima Nova', sans-serif;
     font-weight: 700;
@@ -271,7 +263,7 @@ a.disabled {
     color: #795548;
 }
 
-
+/* Services */
 .ServicesBoxText {
     font-family: 'Proxima Nova', sans-serif;
     font-weight: 600;
@@ -311,7 +303,6 @@ a.disabled {
 
 }
 
-
 .semi-circle {
     position: relative;
     overflow: hidden;
@@ -331,12 +322,7 @@ a.disabled {
     overflow: hidden;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-}
+/* Others */
 
 .accordion-body {
     text-align: justify;
