@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.globe {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #555 inset, 0 0 20px 2px #555;
+}
+
+.globe:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+}
+
+.globe>div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear alternate infinite;
+    background: url(/assets/images/globe.jpg);
+    background-size: cover;
+}
+
+@keyframes spin {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.navbar-nav .nav-link {
+    font-family: 'Proxima Nova', sans-serif;
+    color: black !important;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #D2B48C !important;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #D2B48C !important;
+    font-weight: 700;
+}
+
+.navbar.navbar-scroll {
+    transition: box-shadow 0.3s;
+    box-shadow: none;
+}
+
+.navbar.navbar-scroll.navbar-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #795548 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid white !important;
+    border-radius: 32px;
+}
+
+.btn-outline-primary {
+    border-color: #795548 !important;
+    background-color: white !important;
+    color: #795548 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 32px;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    color: black !important;
+    background-color: #D2B48C !important;
+    border: 1px solid #D2B48C !important;
+
+}
+
+.bg-primary {
+    background-color: #795548 !important;
+}
+
+.text-primary {
+    color: #795548 !important;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFFFF;
+    transition: background-color 1s ease-out;
+    z-index: -1;
+}
+
+/* * Scroll to Top Button * */
+.fixed-action-button {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 999;
+}
+
+.btn-floating {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-floating i {
+    font-size: 24px;
+    color: white;
+}
+
+.btn-floating.btn-primary {
+    background-color: #795548;
+    transition: background-color 0.2s ease-in-out, outline-color 0.2s ease-in-out;
+}
+
+.btn-floating.btn-primary:hover {
+    background-color: #D2B48C;
+    outline-color: #D2B48C;
+}
+
+.btn-floating[title]::after {
+    content: attr(title);
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 12px);
+    transform: translateY(-50%);
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.btn-floating[title]:hover::after {
+    opacity: 1;
+}
+
+
+
+.navbar.navbar-scroll {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: none;
+}
+
+.navbar.navbar-scroll.navbar-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    /* Add transition property */
+}
+
+.navbar-nav .nav-link {
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+#HeroHeading1,
+#HeroHeading2 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #795548;
+    transition: color 0.3s ease-in-out;
+}
+
+#HeroHeading2:hover {
+    color: #D2B48C;
+}
+
+#HeroSubHeading {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #D2B48C;
+}
+
+/* Shrink logo */
+.logo-shrink {
+    height: 40px;
+    transition: ease-in-out 0.5s;
+}
+
+.logo-grow {
+    height: 75px;
+    transition: ease-in-out 0.5s;
+}
+
+.show {
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.hide {
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.cannot-click {
+    pointer-events: none;
+    cursor: default;
+}
