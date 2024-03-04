@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const sectionId = this.getAttribute('href').substring(1);
             const section = document.getElementById(sectionId);
-            const offsetTop = section.offsetTop;
+            const offsetTop = sectionId === 'Hero' ? 0 : section.offsetTop - 70;
 
             window.scrollTo({
                 top: offsetTop,
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add event listener for scroll event
     window.addEventListener('scroll', function () {
         // Get the current scroll position with offset value
-        const scrollPosition = window.scrollY + 160;
+        const scrollPosition = window.scrollY + 70;
 
         // Check each section's position and add or remove active class accordingly
         navLinks.forEach(function (link) {
@@ -34,4 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+
 });
