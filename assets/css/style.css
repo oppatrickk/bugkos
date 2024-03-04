@@ -424,8 +424,3 @@ a.disabled {
     background-color: #D2B48C !important;
     color: black !important;
 }
-
-:focus {
-    box-shadow: 0 0 0 0.25rem rgba(210, 180, 140, 0.3) !important;
-    outline: #D2B48C auto 0.1px !important;
-}
