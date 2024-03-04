@@ -42,6 +42,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #795548 !important;
 }
 
+/* Animations */
+
+
+
 
 /* Navbar */
 .navbar-nav .nav-link {
@@ -123,16 +127,18 @@ a.disabled {
     cursor: default;
 }
 
-
 /* Home */
 .globe {
-    width: 400px;
-    height: 400px;
+    width: 0;
+    height: 0;
     position: relative;
     margin: auto;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 0 20px 20px #555 inset, 0 0 20px 2px #555;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: globeAnimation 2s forwards, fadeSlideUp 2s forwards;
 }
 
 .globe:after {
@@ -149,14 +155,34 @@ a.disabled {
 .globe>div {
     width: 200%;
     height: 100%;
-    animation: spin 30s linear alternate infinite;
     background: url(/assets/images/globe.jpg);
     background-size: cover;
+    animation: spin 30s linear alternate infinite;
+}
+
+@keyframes globeAnimation {
+    to {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes spin {
     to {
         transform: translateX(-50%);
+        /* Spin 360 degrees */
     }
 }
 
